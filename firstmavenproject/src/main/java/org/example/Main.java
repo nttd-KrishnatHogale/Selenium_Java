@@ -12,7 +12,6 @@ public class Main {
         String expectedTitl = "nopCommerce demo store";
         if (actualTitl.equals(expectedTitl)){
             System.out.println("passed");
-            System.out.println("hellohi");
         }
         else {
             System.out.println("failed");
