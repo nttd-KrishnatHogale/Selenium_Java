@@ -1,5 +1,4 @@
 package Listener;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -9,14 +8,12 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import javax.sound.midi.Soundbank;
 import java.time.Duration;
 
+@Listeners(Listener.MyListener.class)
 public class orangeHRM {
     private WebDriver driver;
     @BeforeClass
