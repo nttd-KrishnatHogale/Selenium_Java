@@ -22,6 +22,7 @@ public class ParamTest {
 
     @BeforeClass
     @Parameters({"browser"})
+//    setup(String br,String url)
     void setup(String br) throws InterruptedException {
 
         switch (br.toLowerCase()) {
@@ -39,6 +40,7 @@ public class ParamTest {
         }
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//        driver.get(url);
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         driver.manage().window().maximize();
         Thread.sleep(3000);
