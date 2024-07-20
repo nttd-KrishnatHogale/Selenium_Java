@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Listener.extentreportmanager"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/Anuj/Desktop/mavne/firstmavenproject/src/test/java/Listener">
+        <classes>
+            <class name="Listener.orangeHRM">
+                <methods>
+                    <include name="testLogo"/>
+                    <include name="testUrl"/>
+                    <include name="testTitle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
