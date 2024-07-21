@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <listeners>
-        <listener class-name="Listener.MyListener"/>
-    </listeners>
-    <test verbose="2" preserve-order="true" name="C:/Users/Anuj/Desktop/mavne/firstmavenproject/src/test/java/Listener">
+    <test verbose="2" preserve-order="true" name="C:/Users/Anuj/Desktop/mavne/firstmavenproject/src/test/java/pageobjectmodelpattern/LoginTest.java">
         <classes>
-            <class name="Listener.orangeHRM">
+            <class name="pageobjectmodelpattern.LoginTest">
                 <methods>
-                    <include name="testLogo"/>
-                    <include name="testUrl"/>
-                    <include name="testTitle"/>
+                    <include name="testLogin"/>
                 </methods>
             </class>
         </classes>
